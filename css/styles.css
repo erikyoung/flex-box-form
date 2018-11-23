@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#container {
+	margin: 0 auto;
+}
+
+
+body {
+	
+	color: #384047;
+	
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  font-weight: 200;
+}
+
+/* Main -------------------- */
+
+#code-review-title {
+	height: 75px;
+	background-color: #2D3945;
+	background-size: cover;
+	width: 100%;
+	color: white;
+	line-height: 4;
+}
+
+#intro {
+	margin-top: 20px;
+}
+
+#intro > h6 {
+	color: #ddd;
+	text-align: center;
+    margin-top: 5px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#the-line {
+	 border: 2px solid black;
+	 margin-bottom: 5px;
+	 margin-top: 30px;
+}
+
+#the-line-again {
+	border: 1px solid black;
+}
+
+
+
+label {
+	font-family: 'Open Sans', sans-serif;
+}
