@@ -3,8 +3,9 @@
 	box-sizing: border-box;
 }
 
-#container {
+#container, form {
 	margin: 0 auto;
+
 }
 
 
@@ -44,18 +45,192 @@ h1, h2, h3, h4, h5 {
     margin: 0 auto;
 }
 
-#the-line {
+#the-line, #the-new-line {
 	 border: 2px solid black;
 	 margin-bottom: 5px;
 	 margin-top: 30px;
 }
 
-#the-line-again {
+#the-line-again, #the-new-line-again {
 	border: 1px solid black;
 }
 
 
-
 label {
 	font-family: 'Open Sans', sans-serif;
+	color: #5d5d5d; 
 }
+
+#contact-stuff {
+	border:none;
+	display: flex;
+	
+}
+
+#newsletter {
+	display: inline-block;
+	border:none;
+}
+
+input[type="checkbox"] > label {
+	display: flex;
+	flex-direction: row;
+
+}
+
+input[type="checkbox"] {
+	margin-bottom: 20px;
+}
+
+input[type="radio"] {
+	margin-bottom: 20px; 
+}
+
+textarea {
+	width: 100%;
+    background-color: #dcdcdc;
+    height: 150px;
+    border: none;
+}
+
+
+
+input[type="text"], input[type="tel"], input[type="email"], select[name="user_state"], input[type="number"] {
+	background-color: #dcdcdc;
+	padding: 10px;
+	margin: 20px 0px;
+	width: 100%;
+}
+
+input[placeholder="Required"] {
+	text-align: right;
+}
+
+#zipcode {
+	width: 100%;
+}
+
+#state {
+	padding: 10px ;
+}
+
+.legend-contact, .legend-newsletter {
+	padding-top: 30px;
+	font-weight: bold;
+}
+
+
+
+#newsletter-intro > h6 {
+	color: #a9a9a9; 
+	margin-bottom: 20px;
+}
+
+#newsletter-intro-other > h6 {
+	color: #a9a9a9; 
+	margin-bottom: 20px;
+}
+
+#newsletter-intro-format > h6 {
+	color: #a9a9a9; 
+	margin-bottom: 20px;
+}
+
+#newsletter-intro-copyright > h6 {
+	color: #a9a9a9; 
+	margin-bottom: 20px;
+}
+
+.btn {
+  font-size: 1.25em;
+	font-weight: 400;
+  cursor: pointer; 
+  color: #fff;
+  padding: 20px 20px;
+	width: 100%;
+	margin: .5em 0 1em;
+	
+}
+.btn:hover { 
+  opacity: .75; 
+}
+.default {
+  background-color: #52bab3; 
+}
+
+#copyright {
+	text-align: center;
+}
+
+input[type="checkbox"]:checked + label {
+font-weight: bold;
+}
+
+input:focus, textarea:focus, select:focus{
+	outline: none;
+	border-color:  dodgerblue;
+
+}
+
+/* Media Query -------------------- */
+
+@media (min-width: 768px) {
+	 .container  {
+	 	max-width: 600px;
+	 	margin: 0 auto;
+	 }
+
+	 input[type="submit"], textarea {
+	 	width: 600px;
+	 }
+
+	
+
+	input[type="text"], input[type="tel"], input[type="email"], select[name="user_state"], input[type="number"] {
+	background-color: #dcdcdc;
+	padding: 10px;
+	margin: 20px 0px;
+	width: 450px;
+	
+}
+
+#name-inputs, #email-inputs, 
+#phone-inputs, #street-inputs, 
+#city-inputs, #state-inputs, #zip-inputs {
+	flex-direction: row;
+    display: flex;
+}
+
+label {
+	width: 200px;
+	line-height: 4;
+}
+
+#zipcode {
+	width: 200px;
+}
+
+#the-line  {
+	 border: 2px solid black;
+	 margin-bottom: 5px;
+	 margin-top: 30px;
+	 width: 600px;
+     margin-left: 100px;
+}
+
+#the-line-again {
+	margin-bottom: 5px;
+	 
+	 width: 600px;
+     margin-left: 100px;
+}
+
+
+
+
+
+
+}
+
+
+
