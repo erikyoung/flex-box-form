@@ -61,30 +61,26 @@ label {
 	color: #5d5d5d; 
 }
 
-#contact-stuff {
+#contact-stuff, .newsletter {
 	border:none;
 	display: flex;
 	
 }
 
-#newsletter {
-	display: inline-block;
-	border:none;
+
+
+.html-inputs,.css-inputs, .js-inputs {
+	width: 200px;
+    
 }
 
-input[type="checkbox"] > label {
-	display: flex;
-	flex-direction: row;
-
+#htmlnews, #cssnews, #jsnews, #htmltext, #plaintext {
+	margin-right: 10px;
 }
 
-input[type="checkbox"] {
-	margin-bottom: 20px;
-}
 
-input[type="radio"] {
-	margin-bottom: 20px; 
-}
+
+
 
 textarea {
 	width: 100%;
@@ -172,6 +168,23 @@ input:focus, textarea:focus, select:focus{
 
 }
 
+.line1, .line2 {
+  margin: 0 10px;
+  margin: 0 auto;
+  padding-top: 10px;
+  max-width: 600px;
+}
+
+.line1 {
+  border-bottom: 3px solid black;
+}
+
+.line2 {
+  border-top: 1px solid black;
+  margin-top: 2px;
+ 
+}
+
 /* Media Query -------------------- */
 
 @media (min-width: 768px) {
@@ -206,28 +219,15 @@ label {
 	line-height: 4;
 }
 
+.light, .htmlclass, .plaintextclass {
+	line-height: 0;
+}
+
+
+
 #zipcode {
 	width: 200px;
 }
-
-#the-line  {
-	 border: 2px solid black;
-	 margin-bottom: 5px;
-	 margin-top: 30px;
-	 width: 600px;
-     margin-left: 100px;
-}
-
-#the-line-again {
-	margin-bottom: 5px;
-	 
-	 width: 600px;
-     margin-left: 100px;
-}
-
-
-
-
 
 
 }

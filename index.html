@@ -23,8 +23,8 @@
 			<h5>Signup for our newsletter</h5>
 			<h6>Get the latest news on how your code is doing right in your inbox</h6>
 				
-					<hr  id="the-line">
-					<hr  id="the-line-again">
+		<div class="line1"></div>
+    <div class="line2"></div>
 				
 		</section>
 
@@ -80,27 +80,40 @@
 				<hr id="the-new-line-again">
 			</fieldset>
 
-			<fieldset id="newsletter">
+			<fieldset class="newsletter">
 				<legend class="legend-newsletter">Newsletter</legend>
 				<section id="newsletter-intro">
 					<h6>Select the newsletter you would like to receive</h6>
 				</section>
-				<input type="checkbox" id="htmlnews" value="interest_development" name="user_html"><label class="light" for="htmlnews">HTML News</label><br />
-				<input type="checkbox" id="cssnews" value="interest_development" name="user_html"><label class="light" for="cssnews">CSS News</label><br />
-				<input type="checkbox" id="jsnews" value="interest_development" name="user_html"><label class="light" for="jsnews">JS News</label><br />
+
+				<div class="html-inputs">
+					<input type="checkbox" id="htmlnews" value="interest_development" name="user_html"><label class="light" for="htmlnews">HTML News</label>
+				</div><!--html-inputs-->
+
+				<div class="css-inputs">
+					<input type="checkbox" id="cssnews" value="interest_development" name="user_html"><label class="light" for="cssnews">CSS News</label>
+				</div><!--css-inputs-->
+
+				<div class="js-inputs">
+					<input type="checkbox" id="jsnews" value="interest_development" name="user_html"><label class="light" for="jsnews">JS News</label>
+				</div>
+				
 
 				<section id="newsletter-intro-format">
 					<h6>Newsletter Format</h6>
 				</section>
 
-				<input type="radio" id="htmltext" name="user_htmlstuff"><label>HTML</label><br />
-				<input type="radio" id="plaintext" name="user_plaintext"><label>Plain text</label>
+
+				<div class="radio-button-thing">
+					<input type="radio" id="htmltext" name="user_htmlstuff"><label class="htmlclass">HTML</label><br />
+					<input type="radio" id="plaintext" name="user_plaintext"><label class="plaintextclass">Plain text</label>
+				</div><!--radio-button-->
 
 				<section id="newsletter-intro-other">
 					<h6>Other topics you'd like to hear about</h6>
 				</section>
 
-				<textarea id="topics" name="user_topics"></textarea>
+				<textarea id="topics" name="user_topics" placeholder="Write Uber Interesting Things Here.."></textarea>
 
 				 <input class="btn default" type="submit" value="Submit">
 
