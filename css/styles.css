@@ -37,12 +37,17 @@ h1, h2, h3, h4, h5 {
 	margin-top: 20px;
 }
 
+#intro h5 {
+	font-weight: bold;
+}
+
 #intro > h6 {
 	color: #ddd;
 	text-align: center;
     margin-top: 5px;
     width: 75%;
     margin: 0 auto;
+    padding-bottom: 15px;
 }
 
 #the-line, #the-new-line {
@@ -94,6 +99,7 @@ textarea {
 input[type="text"], input[type="tel"], input[type="email"], select[name="user_state"], input[type="number"] {
 	background-color: #dcdcdc;
 	padding: 10px;
+	border: 0px solid;
 	margin: 20px 0px;
 	width: 100%;
 }
@@ -111,8 +117,27 @@ input[placeholder="Required"] {
 }
 
 .legend-contact, .legend-newsletter {
-	padding-top: 30px;
+	padding-top: 10px;
 	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+#newsletter-intro-format, #newsletter-intro-other {
+	padding-top: 15px;
+}
+
+textarea[id="topics"] {
+	font-size: 20px;
+
+}
+
+#zip-inputs {
+	display: flex;
+    flex-direction: column;
+}
+
+input[type="number"] {
+	width: 50%;
 }
 
 
@@ -172,7 +197,7 @@ input:focus, textarea:focus, select:focus{
   margin: 0 10px;
   margin: 0 auto;
   padding-top: 10px;
-  max-width: 600px;
+  max-width: 570px;
 }
 
 .line1 {
@@ -199,13 +224,20 @@ input:focus, textarea:focus, select:focus{
 
 	
 
-	input[type="text"], input[type="tel"], input[type="email"], select[name="user_state"], input[type="number"] {
+	input[type="text"], input[type="tel"], input[type="email"], select[name="user_state"] {
 	background-color: #dcdcdc;
 	padding: 10px;
 	margin: 20px 0px;
-	width: 450px;
+	width: 375px;
 	
 }
+
+ input[type="number"] {
+ 	background-color: #dcdcdc;
+	padding: 10px;
+	margin: 20px 0px;
+	width: 150px;
+ }
 
 #name-inputs, #email-inputs, 
 #phone-inputs, #street-inputs, 
